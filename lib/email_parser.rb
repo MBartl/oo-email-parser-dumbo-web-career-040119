@@ -14,8 +14,7 @@ class EmailParser
   
   def parse
     @string.split(" ")
-    if @string.ends_with?
-    output
+    @string.tr(",")
   end
   
 end
