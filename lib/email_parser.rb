@@ -21,7 +21,7 @@ class EmailParser
         email
       end
     end
-    
+    output.uniq
   end
   
 end
