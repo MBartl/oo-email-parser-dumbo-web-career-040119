@@ -14,6 +14,7 @@ class EmailParser
   
   def parse
     @string.split(" ")
+    @string.delete(",")
   end
   
 end
