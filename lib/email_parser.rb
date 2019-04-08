@@ -18,6 +18,7 @@ class EmailParser
       if email.end_with?(",")
         email.delete[-1]
       end
+    end
   end
   
 end
