@@ -13,8 +13,8 @@ class EmailParser
   end
   
   def parse
-    @string.split(" ")
-    @string.map {|email| email.tr(",")}
+    output = @string.split(" ")
+    output.map {|email| email.tr(",")}
   end
   
 end
