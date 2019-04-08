@@ -14,7 +14,7 @@ class EmailParser
   
   def parse
     @string.split(" ")
-    @string.tr(",")
+    @string.map {|email| email.tr(",")}
   end
   
 end
