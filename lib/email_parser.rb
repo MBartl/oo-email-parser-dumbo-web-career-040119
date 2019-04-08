@@ -17,6 +17,8 @@ class EmailParser
     output.map do |email| 
       if email.end_with?(",")
         email.delete! (",")
+      else
+        email
       end
     end
   end
