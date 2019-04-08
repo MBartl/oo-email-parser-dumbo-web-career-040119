@@ -13,7 +13,6 @@ class EmailParser
   end
   
   def parse
-    binding.pry
     @string.split(", ")
   end
   
