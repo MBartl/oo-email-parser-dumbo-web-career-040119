@@ -15,7 +15,7 @@ class EmailParser
   def parse
     output = @string.split(" ")
     output.map do |email|
-      if email.end_with?(",") email.delete! (", ") : email
+      email.end_with?(",") email.delete! (", ") : email
         email.delete! (",")
       else
         email
