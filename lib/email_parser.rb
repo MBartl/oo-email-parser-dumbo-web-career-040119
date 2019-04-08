@@ -13,7 +13,8 @@ class EmailParser
   end
   
   def parse
-    @string.split(", ")
+    output = []
+    output.push(@string.split(", "))
   end
   
 end
