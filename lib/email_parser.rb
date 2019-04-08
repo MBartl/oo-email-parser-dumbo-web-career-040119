@@ -14,7 +14,7 @@ class EmailParser
   
   def parse
     output = @string.split(" ")
-    output.map {|email| email.tr(",")}
+    output.map {|email| email.end_with? }
   end
   
 end
