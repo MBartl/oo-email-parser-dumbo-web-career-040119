@@ -13,8 +13,8 @@ class EmailParser
   end
   
   def parse
-    output = @string.split(" ")
-    output.delete(",")
+    @string.split(" ")
+    if @string.ends_with?
     output
   end
   
