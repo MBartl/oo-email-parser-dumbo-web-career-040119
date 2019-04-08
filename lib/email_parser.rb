@@ -16,7 +16,6 @@ class EmailParser
     output = @string.split(" ")
     output.map do |email|
       email.end_with?(",") email.delete! (", ") : email
-      end
     end
     output.uniq
   end
